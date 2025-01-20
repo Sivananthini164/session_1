@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
             key: _formKey, // Key to manage the form validation
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 _buildHeader(),
                 const SizedBox(height: 40),
@@ -53,7 +53,6 @@ class _LoginScreenState extends State<LoginScreen> {
   // Header with welcome text
   Widget _buildHeader() {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image.asset(
           "assets/logo.png", // Logo image
@@ -62,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
         const SizedBox(height: 40),
         const Text(
-          "Welcome Back,",
+          "Welcome Back",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
