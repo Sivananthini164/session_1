@@ -203,10 +203,10 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildLoginButton() {
     return ElevatedButton(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all(Colors.white),
-        backgroundColor: MaterialStateProperty.all(const Color(0xff6746CC)),
-        minimumSize: MaterialStateProperty.all(const Size(double.infinity, 50)),
-        shape: MaterialStateProperty.all(
+        foregroundColor: WidgetStateProperty.all(Colors.white),
+        backgroundColor: WidgetStateProperty.all(const Color(0xff6746CC)),
+        minimumSize: WidgetStateProperty.all(const Size(double.infinity, 50)),
+        shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4),
           ),
