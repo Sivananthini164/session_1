@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:session_1/screens/signup/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -258,7 +259,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   if (kDebugMode) {
                     print("Sign Up");
                   }
-                  // Navigate to the sign-up screen or show sign-up UI
+                  Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const SignUpScreen()));
                 },
               text: "Sign Up",
               style: const TextStyle(
